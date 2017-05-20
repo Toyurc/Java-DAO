@@ -1,10 +1,7 @@
-package com.luv2code.jdbc.employeesearch.core;
-
-import java.math.BigDecimal;
-
+package Learndb;
 /**
  * 
- * @author www.luv2code.com
+ * @Alien
  *
  */
 public class Employee {
@@ -13,16 +10,16 @@ public class Employee {
 	private String lastName;
 	private String firstName;
 	private String email;
-	private BigDecimal salary;
-
+	private int salary;
+	
 	public Employee(String lastName, String firstName, String email,
-			BigDecimal salary) {
+			int salary) {
 
 		this(0, lastName, firstName, email, salary);
 	}
 	
 	public Employee(int id, String lastName, String firstName, String email,
-			BigDecimal salary) {
+			int salary) {
 		super();
 		this.id = id;
 		this.lastName = lastName;
@@ -63,21 +60,21 @@ public class Employee {
 		this.email = email;
 	}
 
-	public BigDecimal getSalary() {
+	public int getSalary() {
 		return salary;
 	}
 
-	public void setSalary(BigDecimal salary) {
+	public void setSalary(int salary) {
 		this.salary = salary;
 	}
 
 	@Override
 	public String toString() {
-		return String
-				.format("Employee [id=%s, lastName=%s, firstName=%s, email=%s, salary=%s]",
+		return String.format("Employee [id=%s, lastName=%s, firstName=%s, email=%s, salary=%s]",
 						id, lastName, firstName, email, salary);
 	}
 	
 	
 		
 }
+
